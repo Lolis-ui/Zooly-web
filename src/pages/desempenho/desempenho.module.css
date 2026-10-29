@@ -1,0 +1,27 @@
+.controls { display: flex; justify-content: flex-end; align-items: end; gap: 12px; margin: -75px 0 28px; }
+.controls label { display: flex; flex-direction: column; gap: 4px; color: #687174; font-size: 10px; font-weight: 700; }
+.controls select, .controls input { min-width: 175px; height: 42px; padding: 0 15px; border: 1px solid #dfe5e8; border-radius: 24px; background: #fff; color: #526171; font: inherit; font-size: 13px; }
+.loading { padding: 35px 0; color: #747d80; }
+.metrics { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 27px; margin: 24px 0 30px; }
+.metrics article { display: flex; align-items: center; gap: 23px; min-height: 128px; padding: 24px 32px; border-radius: 45px; background: #fff; box-shadow: var(--zooly-shadow-card); }
+.metricIcon { display: grid; flex: 0 0 64px; place-items: center; width: 64px; height: 64px; border-radius: 50%; font-size: 30px; font-weight: 700; }
+.green { background: #a5f49e; color: #167534; }.blue { background: #d0e7ff; color: #0872b4; }.red { background: #ffe3de; color: #b6452d; }
+.metrics article div { display: flex; flex-direction: column; gap: 1px; }
+.metrics small { color: #6e777a; font-size: 10px; font-weight: 800; letter-spacing: .8px; }
+.metrics strong { color: #30383a; font-size: 34px; line-height: 1.2; }.metrics em { color: #687174; font-size: 14px; font-style: normal; font-weight: 500; }
+.reportCard { overflow: hidden; border-radius: 42px; background: #fff; box-shadow: var(--zooly-shadow-card); }
+.reportTitle { display: flex; align-items: center; justify-content: space-between; padding: 22px 32px 15px; border-bottom: 1px solid #eef0f0; }
+.reportTitle h2 { margin: 0; color: #30383a; font-size: 19px; }.reportTitle span { color: #168144; font-size: 12px; font-weight: 700; }
+.tableWrap { overflow-x: auto; }.tableWrap table { width: 100%; min-width: 700px; border-collapse: collapse; text-align: left; }
+.tableWrap th { padding: 20px 24px 13px; color: #687174; font-size: 10px; letter-spacing: .8px; text-transform: uppercase; }
+.tableWrap td { height: 79px; padding: 13px 24px; border-top: 1px solid #eff1f1; color: #727b7e; font-size: 14px; }
+.student { display: flex; align-items: center; gap: 12px; min-width: 140px; }.student > span { display: grid; flex: 0 0 38px; place-items: center; width: 38px; height: 38px; border-radius: 50%; background: #eff4f7; color: #708198; font-size: 12px; font-weight: 700; }.student strong { color: #30383a; font-size: 14px; }
+.level { display: inline-flex; padding: 5px 13px; border-radius: 18px; font-size: 10px; font-weight: 700; white-space: nowrap; }.levelAdvanced { background: #a4f39b; color: #176e2d; }.levelMiddle { background: #d2e8ff; color: #0872b4; }.levelAlert { background: #fff2bf; color: #806200; }
+.progress { display: flex; align-items: center; gap: 10px; min-width: 118px; }.progress > span { width: 96px; height: 6px; border-radius: 8px; background: #e9edef; }.progress i { display: block; height: 100%; border-radius: inherit; background: #168144; }.progress strong { color: #30383a; font-size: 12px; }
+.tableWrap td a { color: #167534; font-size: 12px; font-weight: 700; text-decoration: none; }
+.more { display: block; width: 100%; padding: 15px; border: 0; background: #fbfcfc; color: #687174; font-weight: 650; cursor: pointer; }
+.reportFooter { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-top: 18px; color: #747d80; font-size: 12px; }
+.primary { min-height: 52px; padding: 0 24px; border: 0; border-radius: 28px; background: #168144; color: white; font-size: 12px; font-weight: 750; cursor: pointer; box-shadow: 0 8px 17px #16814425; }.primary:disabled { opacity: .65; }
+.empty { padding: 25px; border-radius: 24px; background: white; text-align: center; color: #737c7e; }
+@media(max-width: 1000px) { .metrics { gap: 12px; }.metrics article { gap: 14px; padding: 19px; border-radius: 31px; }.metricIcon { flex-basis: 52px; width: 52px; height: 52px; }.metrics strong { font-size: 27px; }.controls { margin-top: 0; } }
+@media(max-width: 650px) { .controls { justify-content: stretch; flex-direction: column; align-items: stretch; margin: 0 0 20px; }.controls label,.controls select,.controls input { width: 100%; }.metrics { grid-template-columns: 1fr; margin: 20px 0; }.metrics article { min-height: 105px; }.reportCard { border-radius: 27px; }.reportTitle { padding: 18px; }.tableWrap th,.tableWrap td { padding-right: 14px; padding-left: 14px; }.reportFooter { align-items: stretch; flex-direction: column; }.primary { width: 100%; } }
